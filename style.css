@@ -1,7 +1,5 @@
 div.card {
-    width: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
 }
 
 /* Portrait */
@@ -11,5 +9,101 @@ div.card {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+}
+
+body {
+  margin: 0px;
+}
+
+nav {
+  background-color: rgb(52,54,66);
+  padding: 10px;
+
+  min-width: 600px;
+}
+
+.logo {
+  background-color: red;
+  width: 100px;
+  display: inline-block;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.nav-container {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.nav-container div{
+  display: inline-block;
+  margin-left: 20px;
+  color: rgb( 242, 235, 199);
+}
+
+.user-prof {
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  float:right;
+}
+
+.user-prof img{
+  width: 100%;
+}
+
+section.content{
+  background-color: rgb(151,156,156);
+  padding-top:40px;
+}
+
+.content-container {
+  width: 600px;
+  margin: auto;
+  background-color: rgb(242, 235, 199);
+}
+
+.content-container img {
+  width: 100%;
+}
+
+.content-card-container{
+  display: inline-flex;
+}
+
+.content-card {
+  background-color:teal;
+  width: 30%;
+  position: relative;
+  margin:10px;
+  padding:10px;
+  margin-bottom: 30px;
+}
+
+.content-card h2{
+  font-size: 18pt;
+  display:block;
+  color: rgb(242, 235, 199);
+}
+
+.content-card p {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.content-card p.signature {
+  position: absolute;
+  bottom:0px;
+  right: 0px;
+  text-align: right;
+  margin-bottom: 10px;
+  color: rgb(156,156,156);
+}
+
+.content-card p.signature:before, .content-card p.signature:after{
+  content: '"';
 }
 
