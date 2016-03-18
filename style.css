@@ -2,14 +2,6 @@ div.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-}
 
 body {
   margin: 0px;
@@ -107,3 +99,59 @@ section.content{
   content: '"';
 }
 
+
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+
+  nav {
+    width: 100%;
+  }
+
+  nav .logo{
+    width: 100%;
+  }
+
+  .content-container {
+    width: 100%;
+  }
+
+  .nav-container div {
+    width: 100%;
+    font-size: 4em;
+    margin: 20px;
+    border-bottom: 1px solid;
+  }
+
+  .user-prof {
+    float: none;
+    margin: auto;
+    width: 30em;
+    height: 30em;
+    border-radius: 30em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  section.content {
+    padding:0px;
+    margin:0px;
+
+  }
+  .content-card-container {
+    display: block;
+  }
+
+  .content-card {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 80px;
+  }
+
+  .content-card p.signature {
+    font-size: 4em;
+  }
+
+}
